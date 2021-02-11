@@ -13,6 +13,10 @@
     font-family: Jostb;
     src:url(fonts/static/Jost-ExtraBold.ttf)
 }
+#logo2, .dropdown, #mySidenav, #rows{
+    display: none;
+}
+
 html, body{
     margin: 0px;
     background: #171716;}
@@ -171,32 +175,32 @@ header{
                 border-collapse: collapse;
                 color: #fff;
             }
-    #bigtext{
+    .bigtext{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         margin: 0px 10%;
     }
-        #bigtext h1{
+        .bigtext h1{
             font-family: Jostb;
             font-size: 50px;
         }
-            #bigtext h1:nth-child(1){
+            .bigtext h1:nth-child(1){
                 color: #FFFFFF;
                 text-align: center;
             }
-            #bigtext h1:nth-child(2){
+            .bigtext h1:nth-child(2){
                 color: #73F9BC;
                 text-align: center;
                 grid-column-start: 3;
             }
-            #bigtext p{
+            .bigtext p{
                 font-family: Jost;
                 font-style: normal;
                 font-size: 19px;
                 color: #FFFFFF;
                 text-align: center;
             }
-            #bigtext .text2{
+            .bigtext .text2{
                 grid-column-start: 3;
             }
     #tables{
@@ -213,11 +217,18 @@ header{
             grid-template-columns: repeat(2,1fr);
             grid-column-gap: 1vw; 
         }
+        .regular{
+            grid-column-start: 1/2;
+        }
+        .pro{
+            grid-column-start: 2/3;
+        }
         .pep1{
             padding-left: 2vw;
             padding-top: 13px;
             height: 210px;
         }
+        
         .times{
             font-family: Bison;
             font-size: 25px;
@@ -280,9 +291,12 @@ header{
             top: -6vh;
             left: 23vw;
         }
+        .visibleafter{
+            display: none;
+        }
 /*MEDIA*/
 @media (min-width:1360px){
-    #larger{
+    .larger{
     width: 310px;
     }
 }
@@ -341,7 +355,7 @@ header{
     }
 }
 @media (max-width:1200px){
-    #bigtext h1 {
+    .bigtext h1 {
         font-size: 35px;
         margin-bottom: 0;
     }
@@ -359,4 +373,240 @@ header{
         top: 20vh;
         right: 22vw;
     }
+}
+@media (max-width:1100px){
+    .peoples{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pep1:nth-child(even){
+        position: relative;
+        bottom: 0px;
+    }
+    .faces, .images {
+         width: auto; 
+    }
+    .faces{
+        left: 2vw;
+    }
+    .quot {
+        font-size: medium;
+        width: max-content;
+        left: 40vw;
+        word-wrap: break-word; 
+    }
+    .abstract {
+        right: -40vw;
+        padding: 6px 4vw;
+    }
+    .calendar {
+        right: -44vw;
+        padding: 6px 4vw;
+    }
+    .qa {
+        left: 41vw;
+    }
+    .visibleafter{
+        display: contents;
+    }
+        .visibleafter h1{
+            font-family: Jostb;
+            color: #73F9BC;
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        .visibleafter p{
+            font-family: Jost;
+            font-style: normal;
+            font-size: 19px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    .bigtext{
+        display: contents;
+    }
+        .bigtext h1:nth-child(2), p:nth-child(4){
+            display: none;
+        }
+        .bigtext h1:nth-child(1){
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        #tables {
+            margin: 0px 15px;
+        }
+}
+@media (max-width: 950px){
+    .quot {
+        font-size: smaller;
+    }
+    #choice tr {
+        font-size: 13px;
+    }
+    .text {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 780px){
+    .main-content {
+        margin-left: 0; 
+    }
+    .title {
+        font-size: 4em;
+        text-align: center;
+        
+    margin-top: 24px;
+
+    }
+    #person {
+        width: 31%;
+        top: -35vh;
+        right: -34vw;
+        position: relative;
+    }
+
+    .btn {
+        width: -webkit-fill-available;
+        height: 44px;
+        z-index: 3;
+        top: 13vh;
+    }
+    .online {
+        font-size: 1.7rem;
+        position: relative;
+        width: -webkit-fill-available;
+        text-align: center;
+        padding: 0;
+        top: 36vh;
+    }
+    .info{
+        top: 40vh;
+        left: 5vw;
+        position: relative;
+    }
+    .text{
+        position: relative;
+        top: 37vh;
+        left: 5vw;
+        font-size: x-large;
+    }
+    .larger{
+        width: 46vw;
+    }
+    #footer {
+        margin-top: 0;
+    }
+    .drop-menu-item{
+        display:block;
+    }
+    #choice {
+        width: 23vw;
+        margin-left: 36%;
+    }
+    #choice tr {
+        display: inherit;
+    }
+
+    .dropbtn {
+        background-color: #73F9BC;
+        padding: 16px;
+        font-size: 16px;
+        font-family: Jostb;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        font-family: Jostb;
+        position: relative;
+        display: inline-block;
+        position: relative;
+        left: 33vw;
+      }
+      
+      .dropdown-content {
+        font-family: Jostb;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      #choice, #logo, .menu{
+          display: none;
+      }
+      #logo2{
+        position: relative;
+        margin-left: 19%;
+        top: 16%;
+        display: inline;
+      }
+      header {
+        height: 40px;
+      }
+      #mySidenav, #rows{
+          display: block;
+      }
+      #mySidenav{
+      z-index: 10;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        font-family: Bison;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 130%;
+            text-transform: uppercase;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    
 }

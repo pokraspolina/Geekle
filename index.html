@@ -11,6 +11,25 @@
     <div class="main">
         <header>
             <a href="index.html"><img src="img/logo.svg" alt="logo" id="logo"></a>
+            <a href="index.html"><img src="img/logo2.svg" alt="logo" id="logo2"></a>
+
+
+            
+              </style>
+              </head>
+              <body>
+              
+              <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Agenda</a>
+                <a href="#">Tickets</a>
+                <a href="#">team</a>
+              </div>
+              <span id="rows" style="font-size:30px;cursor:pointer; color: #fff; position: relative;
+              top: -3vh;
+              text-align: right;" onclick="openNav()">&#9776; </span>
+              
+              
             <div class="menu">
             <a href="#" class="menu-item">Agenda</a>
             <a href="#" class="menu-item">Tickets</a>
@@ -25,8 +44,7 @@
             color: #FFFFFF;
             opacity: 0.5;
             margin-bottom: 0px;
-            line-height: 5vh;">Cloud Architecture
-            <br>Optimization:</h2>
+            line-height: 5vh;">Cloud Architecture Optimization:</h2>
             <h2 class="text" style="
             color: #73F9BC;
             margin-top: -4px;">Automation&Testing</h2>
@@ -40,6 +58,16 @@
         <h2 class="time">choose your time zone</h2>
         <p id="talks">Some talks are pre-recorded
             due to speakers’ time-zone differences</p>
+
+            <div class="dropdown">
+                <button class="dropbtn">CET (Central European Time)</button>
+                <div class="dropdown-content">
+                <a href="#">CST (Central Standard Time)</a>
+                <a href="#">Vendor track</a>
+                </div>
+              </div>        
+              
+
         <table id="choice">
             <tr>
                 <td>CET (Central European Time)</td>
@@ -47,7 +75,7 @@
                 <td>Vendor track</td>
             </tr>
         </table>
-        <div id="bigtext">
+        <div class="bigtext">
             <h1>Career Track</h1>
             <h1>Pro Track</h1>
             <p class="text1">Aimed to upgrade Developers’
@@ -58,78 +86,102 @@
         <div id="tables">
             <h2 id="nfr">NFR – Non-functional requirenment</h2>
             <div class="peoples">
-                <div class="pep1" style="border-right:1px solid #fff; border-left:1px solid #fff;">
-                    <span class="times">10:10 — 10:40</span><br>
-                    <span class="names">Alexander Kuttig</span><br>
-                    <img src="img/alexander_logo.svg" alt="" class="images">
-                    <img src="img/alexander.svg" alt="" class="faces">
-                    <h3 class="quot">"Using AWS and Google Cloud in a cost-efficient way"</h3>
-                    <a href="#" class="abstract">show abstract</a>
-                    <a href="#" class="calendar">add to calendar</a>
-                    <hr noshade size="1">
-                </div>
-                <div class="pep1" style="border-left:1px solid #73F9BC; border-right:1px solid #73F9BC;">
-                        <span class="times">10:20 — 10:50</span><br>
-                        <span class="names">Heidi Waterhouse</span><br>
+                <div class="regular">
+                    <div class="pep1" style="border-right:1px solid #fff; border-left:1px solid #fff;">
+                        <span class="times">10:10 — 10:40</span><br>
+                        <span class="names">Alexander Kuttig</span><br>
                         <img src="img/alexander_logo.svg" alt="" class="images">
-                        <img src="img/heldi.svg" alt="" class="faces">
-                        <h3 class="quot">"Breaking Strain: A story about capacities and testing"</h3>
+                        <img src="img/alexander.svg" alt="" class="faces">
+                        <h3 class="quot">"Using AWS and Google Cloud in a cost-efficient way"</h3>
                         <a href="#" class="abstract">show abstract</a>
                         <a href="#" class="calendar">add to calendar</a>
                         <hr noshade size="1">
+                    </div>
+                
+                    <div class="pep1" style="border-right:1px solid #fff; border-left:1px solid #fff;">
+                        <span class="times">10:40 — 11:10</span><br>
+                        <span class="names">Ivan Rigoni</span><br>
+                        <img src="img/ivan_logo.svg" alt="" class="images">
+                        <img src="img/ivan.svg" alt="" class="faces">
+                        <h3 class="quot">"A Million Requests in 10 minutes"</h3>
+                        <a href="#" class="abstract">show abstract</a>
+                        <a href="#" class="calendar">add to calendar</a>
+                        <hr noshade size="1">
+                    </div>
+                    
+                    <div class="pep1" style="border-right:1px solid #fff; border-left:1px solid #fff;">
+                        <span class="times">11:10 — 11:40</span><br>
+                        <span class="names">Rohit Bhardwaj</span><br>
+                        <img src="img/rohit_logo.svg" alt="" class="images">
+                        <img src="img/rohit.svg" alt="" class="faces">
+                        <h3 class="quot">"Resilient Cloud Architecture Design Patterns"</h3>
+                        <a href="#" class="abstract">show abstract</a>
+                        <a href="#" class="calendar">add to calendar</a>
+                        <hr noshade size="1">
+                    </div>
+                    
+                    <div style="padding-left: 2vw;
+                    padding-top: 13px; border-right:1px solid #fff; border-left:1px solid #fff; border-bottom: 1px solid #fff;; ">
+                        <span class="times">11:10 — 11:40</span><br>
+                        <h3 class="qa">Q&A</h3>
+                    </div>
                 </div>
-                <div class="pep1" style="border-right:1px solid #fff; border-left:1px solid #fff;">
-                    <span class="times">10:40 — 11:10</span><br>
-                    <span class="names">Ivan Rigoni</span><br>
-                    <img src="img/ivan_logo.svg" alt="" class="images">
-                    <img src="img/ivan.svg" alt="" class="faces">
-                    <h3 class="quot">"A Million Requests in 10 minutes"</h3>
+                <div class="visibleafter">
+                    
+                    <h1>Pro Track</h1>
+                    <p class="text2">Practical tech cases for Experienced
+                        Software Architects, CTOs and Senior Software Engineers</p>
+                
+                <h2 id="nfr">NFR – Non-functional requirenment</h2></div>
+                <div class="pro">
+                <div class="pep1" style="border-left:1px solid #73F9BC; border-right:1px solid #73F9BC;">
+                    <span class="times">10:20 — 10:50</span><br>
+                    <span class="names">Heidi Waterhouse</span><br>
+                    <img src="img/alexander_logo.svg" alt="" class="images">
+                    <img src="img/heldi.svg" alt="" class="faces">
+                    <h3 class="quot">"Breaking Strain: A story about capacities and testing"</h3>
                     <a href="#" class="abstract">show abstract</a>
                     <a href="#" class="calendar">add to calendar</a>
                     <hr noshade size="1">
-                </div>
+            </div>
                 <div class="pep1" style="border-left:1px solid #73F9BC; border-right:1px solid #73F9BC;">
                         <span class="times">10:50 — 11:20</span><br>
                         <span class="names">Emma Thomas</span><br>
                         <img src="img/emma_logo.svg" alt="" class="images">
                         <img src="img/emma.svg" alt="" class="faces">
-                        <h3 class="quot" id="larger">"But we wanted our solution to transmit data faster than the speed of light"</h3>
+                        <h3 class="quot larger">"But we wanted our solution to transmit data faster than the speed of light"</h3>
                         <a href="#" class="abstract">show abstract</a>
                         <a href="#" class="calendar">add to calendar</a>
                         <hr noshade size="1">
-                </div>
-                <div class="pep1" style="border-right:1px solid #fff; border-left:1px solid #fff;">
-                    <span class="times">11:10 — 11:40</span><br>
-                    <span class="names">Rohit Bhardwaj</span><br>
-                    <img src="img/rohit_logo.svg" alt="" class="images">
-                    <img src="img/rohit.svg" alt="" class="faces">
-                    <h3 class="quot">"Resilient Cloud Architecture Design Patterns"</h3>
-                    <a href="#" class="abstract">show abstract</a>
-                    <a href="#" class="calendar">add to calendar</a>
-                    <hr noshade size="1">
                 </div>
                 <div class="pep1" style="border-left:1px solid #73F9BC; border-right:1px solid #73F9BC;">
                     <span class="times">11:20 — 11:50</span><br>
                     <span class="names">Michael Ritchson</span><br>
                     <img src="img/michael_logo.svg" alt="" class="images">
                     <img src="img/michael.svg" alt="" class="faces">
-                    <h3 class="quot" style="width: 21vw;">"Apache Tomee, a successful open source migration journey for NASA"</h3>
+                    <h3 class="quot larger">"Apache Tomee, a successful open source migration journey for NASA"</h3>
                     <a href="#" class="abstract">show abstract</a>
                     <a href="#" class="calendar">add to calendar</a>  
                     <hr noshade size="1">
-                </div>
-                <div style="padding-left: 2vw;
-                padding-top: 13px; border-right:1px solid #fff; border-left:1px solid #fff; border-bottom: 1px solid #fff;; ">
-                    <span class="times">11:10 — 11:40</span><br>
-                    <h3 class="qa">Q&A</h3>
                 </div>
                 <div style="padding-left: 2vw;
                 padding-top: 13px; border-right:1px solid #73F9BC; border-left:1px solid #73F9BC; border-bottom: 1px solid #73F9BC;; ">
                     <span class="times">11:50 — 12:20</span><br>
                     <h3 class="qa">Q&A</h3>
                 </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
 </body>
 </html>
