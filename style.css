@@ -644,4 +644,12 @@ header{
     .bigtext p , .visibleafter p{
     font-size: small;
     }
+    header {
+        height: 40px;
+        margin: 10px 10px;
+        border: 1px solid #73F9BC;
+    }
+    #rows{
+        right: 2vw;
+    }
 }
