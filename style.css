@@ -610,3 +610,19 @@ header{
         .sidenav a {font-size: 18px;}
     
 }
+
+@media screen and (max-width:450px){
+    #logo2{
+        margin-left: 2%;
+        top: 28%;
+    }
+    #rows{
+        top: -4vh;
+    }
+    .title {
+        font-size: 2em;
+    }
+    #person {
+        width: 50%;
+    }
+}
