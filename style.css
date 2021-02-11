@@ -654,24 +654,24 @@ header{
     }
     .times, .names{
         position: relative;
-        right: -37vw;
+        right: -40vw;
     }
     .faces {
-        left: -30vw;
+        left: -32vw;
     }
     .images {
     position: relative;
     top: 2vh;
     }
     .quot {
-    font-size: larger;
+    font-size: medium;
     word-break: break-word;
     width: 40vw;
-    left: 37vw;
+    left: 40vw;
     top: -26vh;
     }
     .abstract {
-    right: -37vw;
+    right: -40vw;
     padding: 10px 10vw;
     }
     .calendar {
