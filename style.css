@@ -657,21 +657,21 @@ header{
         right: -40vw;
     }
     .faces {
-        left: -32vw;
+        left: -35vw;
     }
     .images {
     position: relative;
     top: 2vh;
     }
     .quot {
-    font-size: medium;
+    font-size: small;
     word-break: break-word;
     width: 40vw;
     left: 40vw;
     top: -26vh;
     }
     .abstract {
-    right: -40vw;
+    right: -41vw;
     padding: 10px 10vw;
     }
     .calendar {
