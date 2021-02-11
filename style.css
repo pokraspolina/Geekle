@@ -611,7 +611,7 @@ header{
     
 }
 
-@media screen and (max-width:500px){
+@media(max-width:500px){
     #logo2{
         margin-left: 2%;
         top: 30%;
