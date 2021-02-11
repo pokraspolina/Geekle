@@ -685,5 +685,9 @@ header{
     hr {
     bottom: 13vh
     }
+    .qa {
+    left: 40vw;
+    top: -3vh;
+}
 
 }
