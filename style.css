@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Bison;
+    src: url(fonts/Bison-Bold.ttf);
+}
+@font-face{
+    font-family: Jost;
+    src:url(fonts/Jost-VariableFont_wght.ttf)
+}
+@font-face{
+    font-family: Jostb;
+    src:url(fonts/static/Jost-ExtraBold.ttf)
+}
+html, body{
+    margin: 0px;
+    background: #171716;}
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+}
+header{
+    height: 100px;
+    background:#171716;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: none;
+    border-right: none;
+    z-index: 2;
+}
+    #logo{
+        position: relative;
+        margin-left: 19%;
+        top: 16%;
+    }
+    .menu{
+        position: relative;
+        text-align: right;
+        right: 18%;
+        bottom: 37%;
+    }
+        .menu-item{
+            font-family: Bison;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 130%;
+            text-transform: uppercase;
+            text-decoration:none;
+            color:  #FFFFFF;;
+        }
+        .menu-item +.menu-item{
+            margin-left: 4vw;
+        }
+.main{
+    background-image: url(img/main-photo.jpg);
+    height: 118vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 3vh;
+    z-index: 1;
+    height: auto;
+}
+.main-content{
+    margin-left: 19%;
+    
+}
+.title,.info, .btn, .online, .time{
+    font-family: Bison;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    .title{
+        font-size: 3.5em;
+        color: #73F9BC;
+        text-transform: uppercase;
+    }
+    .info{
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        top: -5vh;
+        position: relative;
+    }
+    .text{
+        font-family: Jost;
+        position: relative;
+        top: -8vh;
+        font-size: xx-large;
+    }
+    .btn{
+        background-color: #fff;
+        width: 325px;
+        height: 55px;
+        text-align:center;
+        font-size: xx-large;
+        position: relative;
+        top: -8vh;
+    }
+    .online{
+        color: #73F9BC;
+        font-size: 3em;
+        position: relative;
+        background-color: black;
+        width: fit-content;
+        padding: 0px 10vw;
+        border: 1px solid;
+        z-index: 3;
+    }
+    #person{
+        width: 28%;
+        z-index: 2;
+        position: absolute;
+        top: 17vh;
+        right: 18vw;
+    }
+
+/*FOOTER */
+#footer{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+    .agenda{
+        font-family: Jostb;
+        color: #73F9BC;
+        font-size: 4em;
+        text-align: center;
+        margin: 0px;
+    }
+    .time{
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin: 0px;
+        font-size: xx-large;
+        margin-bottom: 3vh;
+    }
+    #talks{
+        font-family: Jost;
+        text-align: center;
+        margin: 0px;
+        color: #fff;
+        font-size: smaller;
+        margin-bottom: 3vh;
+    }
+    #choice{
+        background: #171716;
+        width: 65vw;
+        margin-left: 19%;    
+    }
+        #choice tr{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            font-family: Jost;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 17px;
+            line-height: 32px;
+            text-align: center;
+        }
+        #choice tr td:nth-child(1){
+            background: #73F9BC;
+            color: #000;
+            border: none;
+        }
+            #choice tr td{
+                border: 1px solid #FFFFFF;
+                display:inline-block;
+                border-collapse: collapse;
+                color: #fff;
+            }
+    #bigtext{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0px 10%;
+    }
+        #bigtext h1{
+            font-family: Jostb;
+            font-size: 50px;
+        }
+            #bigtext h1:nth-child(1){
+                color: #FFFFFF;
+                text-align: center;
+            }
+            #bigtext h1:nth-child(2){
+                color: #73F9BC;
+                text-align: center;
+                grid-column-start: 3;
+            }
+            #bigtext p{
+                font-family: Jost;
+                font-style: normal;
+                font-size: 19px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            #bigtext .text2{
+                grid-column-start: 3;
+            }
+    #tables{
+        margin: 0px 5px;
+    }
+        #nfr{
+            background-color: #73F9BC;
+            text-align: center;
+            font-family: Jostb;
+            margin-bottom: 0;
+        }
+        .peoples{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 1vw; 
+        }
+        .pep1{
+            padding-left: 2vw;
+            padding-top: 13px;
+            height: 210px;
+        }
+        .times{
+            font-family: Bison;
+            font-size: 25px;
+            line-height: 30px;
+            color: #73F9BC;
+        }
+        .names{
+            font-family: Jost;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+        .images{
+            position: relative;
+            top: -8vh;
+        }
+        .faces{
+            position: relative;
+            top: -8vh;
+            left: 2vw;
+        }
+        .quot{
+            font-family: Jost;
+            color: #FFFFFF;
+            width: 17vw;
+            position: relative;
+            top: -30vh;
+            left: 23vw;
+        }
+        .abstract{
+            font-family: Bison;
+            color: #171716;
+            background-color: #73F9BC;
+            padding: 5px 2vw;
+            position: relative;
+            top: -26vh;
+            right: -23vw;
+        }
+        .calendar{
+            font-family: Bison;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 2vw;
+            position: relative;
+            top: -26vh;
+            right: -24vw;
+        }
+        hr{
+            position: relative;
+            bottom: 20vh;
+            margin-right: 2vw;
+        }
+        .qa{
+            font-family: Jost;
+            color: #FFFFFF;
+            width: 17vw;
+            position: relative;
+            top: -6vh;
+            left: 23vw;
+        }
+/*MEDIA*/
+@media (min-width:1360px){
+    #larger{
+    width: 310px;
+    }
+}
+@media (max-width:1465px){
+    #person{
+        top: 25vh;
+        right: 15vw;
+    }
+    .faces {
+        left: 1vw;
+        width: 22%;
+    }
+    .quot{
+        left: 24vw;
+        font-size: medium;
+    }
+    .abstract{
+        right: -24vw;
+        padding: 2px 1vw;
+    }
+    .calendar{
+        right: -26vw;
+        font-size: medium;
+        padding: 2px 1vw;
+    }
+    .images {
+        width: 20%;
+    }
+    .names {
+        font-size: 18px;
+    }
+}
+@media(max-width:1370px){
+    .faces {
+        left: 0vw;
+    }
+    .online {
+        font-size: 2.5em;
+    }
+    .title {
+        font-size: 3em;
+    }
+    .text {
+        font-size: x-large;
+    }
+    #person {
+        width: 24%;
+        top: 26vh;
+        right: 20vw;
+    }
+    .quot{
+        font-size: small;
+    }
+    .names {
+        font-size: 16px;
+    }
+}
+@media (max-width:1200px){
+    #bigtext h1 {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+    .online {
+        font-size: 2em;
+        position: relative;
+        bottom: 5vh;
+    }
+    .btn {
+        width: 275px;
+        height: 44px;
+    }
+    #person {
+        width: 25%;
+        top: 20vh;
+        right: 22vw;
+    }
+}
