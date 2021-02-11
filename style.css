@@ -667,11 +667,11 @@ header{
     font-size: small;
     word-break: break-word;
     width: 40vw;
-    left: 43vw;
+    left: 45vw;
     top: -20vh;
     }
     .abstract {
-        right: -43vw;
+        right: -45vw;
         top:-15vh;
         padding: 10px 10vw;
     }
