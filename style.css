@@ -611,9 +611,9 @@ header{
     
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:500px){
     #logo2{
-        margin-left: 2%;
+        margin-left: 1%;
         top: 28%;
     }
     #rows{
