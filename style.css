@@ -626,19 +626,22 @@ header{
         width: 50%;
     }
     .info, .text{
-        top: 40vh;
+        top: 38vh;
     }
     .online {
         font-size: 1em;
-        top: 33vh;
+        top: 31vh;
     }
     .dropdown {
-    left: 20vw;
+    left: 18vw;
     }
     #talks {
     font-size: x-small;
     }
     .btn {
-    top: 6vh;
+    top: 4vh;
+    }
+    .bigtext p , .visibleafter p{
+    font-size: small;
     }
 }
