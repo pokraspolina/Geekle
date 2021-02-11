@@ -672,11 +672,11 @@ header{
     }
     .abstract {
     right: -41vw;
-        top:-15vh
+        top:-15vh;
     padding: 10px 10vw;
     }
     .calendar {
-    right: 0vw;
+    right: -5vw;
     top: -7vh;
     padding: 10px 9vw;
 }
@@ -684,10 +684,10 @@ header{
             height: 310px;
     }
     hr {
-    bottom: 5vh
+    bottom: 5vh;
     }
     .qa {
-    left: 40vw;
+    left: 47vw;
     top: -3vh;
 }
 
