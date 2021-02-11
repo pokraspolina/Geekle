@@ -613,16 +613,28 @@ header{
 
 @media screen and (max-width:500px){
     #logo2{
-        margin-left: 1%;
-        top: 28%;
+        margin-left: 2%;
+        top: 30%;
     }
     #rows{
         top: -4vh;
     }
     .title {
-        font-size: 1em;
+        font-size: 2em;
     }
     #person {
         width: 50%;
+    }
+    .info, .text{
+        top: 44vh;
+    }
+    .online {
+        font-size: 1em;
+    }
+    .dropdown {
+    left: 20vw;
+    }
+    #talks {
+    font-size: x-small;
     }
 }
