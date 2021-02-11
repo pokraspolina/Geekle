@@ -614,7 +614,7 @@ header{
 @media(max-width:500px){
     #logo2{
         margin-left: 2%;
-        top: 30%;
+        top: 40%;
     }
     #rows{
         top: -4vh;
@@ -652,4 +652,38 @@ header{
     #rows{
         right: 2vw;
     }
+    .times, .names{
+        position: relative;
+        right: -37vw;
+    }
+    .faces {
+        left: -30vw;
+    }
+    .images {
+    position: relative;
+    top: 2vh;
+    }
+    .quot {
+    font-size: larger;
+    word-break: break-word;
+    width: 40vw;
+    left: 37vw;
+    top: -26vh;
+    }
+    .abstract {
+    right: -37vw;
+    padding: 10px 10vw;
+    }
+    .calendar {
+    right: 0vw;
+    top: -17vh;
+    padding: 10px 9vw;
+}
+    .pep1{
+            height: 300px;
+    }
+    hr {
+    bottom: 13vh
+    }
+
 }
