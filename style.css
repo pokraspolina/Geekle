@@ -654,7 +654,7 @@ header{
     }
     .times, .names{
         position: relative;
-        right: -40vw;
+        right: -45vw;
     }
     .faces {
         left: -35vw;
@@ -668,22 +668,23 @@ header{
     word-break: break-word;
     width: 40vw;
     left: 40vw;
-    top: -26vh;
+    top: -20vh;
     }
     .abstract {
     right: -41vw;
+        top:-15vh
     padding: 10px 10vw;
     }
     .calendar {
     right: 0vw;
-    top: -17vh;
+    top: -7vh;
     padding: 10px 9vw;
 }
     .pep1{
-            height: 300px;
+            height: 310px;
     }
     hr {
-    bottom: 13vh
+    bottom: 5vh
     }
     .qa {
     left: 40vw;
